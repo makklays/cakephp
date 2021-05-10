@@ -1,0 +1,7 @@
+/* my css file - main.css (my a new design) */
+
+textarea {
+    min-height: unset !important;
+    height: unset !important;
+}
+

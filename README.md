@@ -42,7 +42,7 @@ automated upgrades, so you have to do any updates manually.
 
 ## Configuration
 
-Read and edit the environment specific `config/app_local.php` and setup the 
+Read and edit the environment specific `config/app_local.php` and setup the
 `'Datasources'` and any other configuration relevant for your application.
 Other environment agnostic settings can be changed in `config/app.php`.
 
@@ -54,25 +54,25 @@ custom styles.
 
 ## Sobre tarea de prueba (screens)
 
-1. Login 
+1. Login
 
-<img scr="login.png" style="width:600px;" />
+<img scr="https://github.com/makklays/cakephp/blob/main/webroot/img/cake_login.png" style="width:600px;" />
 
 2. All tasks
 
-<img scr="login.png" style="width:600px;" />
+<img scr="https://github.com/makklays/cakephp/blob/main/webroot/img/cake_all.png" style="width:600px;" />
 
 3. Add task
 
-<img scr="login.png" style="width:600px;" />
+<img scr="https://github.com/makklays/cakephp/blob/main/webroot/img/cake_add.png" style="width:600px;" />
 
 4. View task
 
-<img scr="login.png" style="width:600px;" />
+<img scr="https://github.com/makklays/cakephp/blob/main/webroot/img/cake_view.png" style="width:600px;" />
 
 5. Edit task
 
-<img scr="login.png" style="width:600px;" />
+<img scr="https://github.com/makklays/cakephp/blob/main/webroot/img/cake_delete.png" style="width:600px;" />
 
 6. Delete task
 

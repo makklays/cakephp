@@ -56,27 +56,28 @@ custom styles.
 
 1. Login
 
-![Laravel_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_login.png)
+![cake_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_login.png)
+![cake_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_login2.png)
 
 2. All tasks
 
-![Laravel_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_all.png)
+![cake_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_all.png)
 
 3. Add task
 
-![Laravel_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_add.png)
+![cake_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_add.png)
 
 4. View task
 
-![Laravel_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_view.png)
+![cake_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_view.png)
 
 5. Edit task
 
-![Laravel_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_edit.png)
+![cake_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_edit.png)
 
 6. Delete task
 
-![Laravel_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_delete.png)
+![cake_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_delete.png)
 
 
 

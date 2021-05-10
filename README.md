@@ -56,10 +56,12 @@ custom styles.
 
 1. Login
 
+![Laravel_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_login.png)
 <img scr="/img/cake_login.png" style="width:600px;" />
 
 2. All tasks
 
+![Laravel_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_all.png)
 <img scr="/webroot/img/cake_all.png" style="width:600px;" />
 
 3. Add task

@@ -99,6 +99,8 @@ design with the following elements:
 
 ## Para base de datos
 
+Las peticiónes para base de datos
+
     CREATE DATABASE `cakephpdb` character set utf8 collate utf8_general_ci ;
 
     CREATE TABLE `tasks` (

@@ -78,5 +78,20 @@ custom styles.
 
 <img scr="login.png" style="width:600px;" />
 
+DESCRIPTION
+It is necessary to make a small web application that contains a form with a small
+design with the following elements:
+- Name field: the user must only be able to enter letters
+- Mail field: validate that a mail is a mail
+- Description field: free text
+- Address field: address text
+- CP field: CP format
 
+  This data must be sent to a Backend that will normalize and validate the data
+  and save it in DB. Backend will save encrypted user password when they
+  register.
+  Then the user must be able to login and list his registered tasks from the form,
+  to do this it is necessary that the Backend can request the data from the DB and
+  prepare them so that the Front can make use of this data. It is necessary to
+  make Front to show the user's data.
 

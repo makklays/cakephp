@@ -56,27 +56,28 @@ custom styles.
 
 1. Login
 
-<img scr="https://github.com/makklays/cakephp/blob/main/webroot/img/cake_login.png" style="width:600px;" />
+![cake_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_login.png)
+![cake_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_login2.png)
 
 2. All tasks
 
-<img scr="https://github.com/makklays/cakephp/blob/main/webroot/img/cake_all.png" style="width:600px;" />
+![cake_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_all.png)
 
 3. Add task
 
-<img scr="https://github.com/makklays/cakephp/blob/main/webroot/img/cake_add.png" style="width:600px;" />
+![cake_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_add.png)
 
 4. View task
 
-<img scr="https://github.com/makklays/cakephp/blob/main/webroot/img/cake_view.png" style="width:600px;" />
+![cake_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_view.png)
 
 5. Edit task
 
-<img scr="https://github.com/makklays/cakephp/blob/main/webroot/img/cake_delete.png" style="width:600px;" />
+![cake_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_edit.png)
 
 6. Delete task
 
-<img scr="login.png" style="width:600px;" />
+![cake_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_delete.png)
 
 DESCRIPTION
 It is necessary to make a small web application that contains a form with a small

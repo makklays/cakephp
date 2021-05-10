@@ -56,7 +56,7 @@ custom styles.
 
 1. Login
 
-<img scr="/webroot/img/cake_login.png" style="width:600px;" />
+<img scr="/img/cake_login.png" style="width:600px;" />
 
 2. All tasks
 

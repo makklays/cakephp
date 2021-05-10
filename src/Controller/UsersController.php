@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use Cake\Auth\AbstractPasswordHasher;
 use Cake\Auth\DefaultPasswordHasher;
 use Cake\Datasource\ConnectionManager;
 use Cake\Event\EventInterface;
@@ -101,11 +102,11 @@ class UsersController extends AppController
         $email = $this->request->getData('email');
         $password = $this->request->getData('password');
 
-        $hasher = new DefaultPasswordHasher();
-        $password = $hasher->hash($password);
-
         //$user = $this->Auth->identify();
         if ($this->request->getMethod() == 'POST') {
+
+            $hasher = new DefaultPasswordHasher();
+            $password = $hasher->hash($password);
 
             $connection = ConnectionManager::get('default');
             $user = $connection
@@ -155,8 +156,12 @@ class UsersController extends AppController
         }
     }
 
-    //
+    // Logout
     public function logout(){
+        // destroy session
+        $session = $this->request->getSession();
+        $session->destroy();
+
         return $this->redirect($this->Auth->logout());
     }
 }

@@ -58,6 +58,7 @@ custom styles.
 
 ![cake_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_login.png)
 ![cake_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_login2.png)
+![cake_Logo](https://github.com/makklays/cakephp/blob/main/webroot/img/cake_users.png)
 
 2. All tasks
 
@@ -96,3 +97,43 @@ design with the following elements:
   prepare them so that the Front can make use of this data. It is necessary to
   make Front to show the user's data.
 
+## Para base de datos
+
+CREATE DATABASE `cakephpdb` character set utf8 collate utf8_general_ci ;
+
+CREATE TABLE `tasks` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `user_id` int(12) NOT NULL,
+    `name` varchar(50) DEFAULT NULL,
+    `email` varchar(50) DEFAULT NULL,
+    `description` text DEFAULT NULL,
+    `address` text DEFAULT NULL,
+    `cp` varchar(255) DEFAULT NULL,
+    `created` datetime DEFAULT NULL,
+    `modified` datetime DEFAULT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8
+
+CREATE TABLE `users` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `name` varchar(50) DEFAULT NULL,
+    `password` varchar(255) NOT NULL,
+    `created` datetime DEFAULT NULL,
+    `modified` datetime DEFAULT NULL,
+    `email` varchar(255) NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8
+
+UPDATE cakephpdb.tasks SET user_id = 1, name = 'Alexander', email = 'alexander.kuziv@makklays.com', description = 'Programmar', address = 'España', cp = 'Que es CP?', created = '2021-05-08 21:39:47', modified = '2021-05-08 21:39:50' WHERE id = 1;
+UPDATE cakephpdb.tasks SET user_id = 1, name = 'A', email = 'alexander@makklays.com', description = 'La tarea', address = '', cp = '', created = '2021-05-09 09:52:23', modified = '2021-05-09 09:52:23' WHERE id = 2;
+UPDATE cakephpdb.tasks SET user_id = 1, name = 'Bibi', email = 'hola.kuziv@gmail.com', description = 'Voy a comida e iglesia en semana que viene - por ejemplo', address = 'España', cp = 'no se ¿por qué hay que este campo?', created = '2021-05-09 09:54:39', modified = '2021-05-09 20:10:50' WHERE id = 3;
+UPDATE cakephpdb.tasks SET user_id = 3, name = 'Nastya', email = 'nastya@makklays.com', description = 'vivo', address = 'España', cp = 'no se ¿por qué hay que este campo?', created = '2021-05-09 10:40:09', modified = '2021-05-09 10:40:09' WHERE id = 5;
+UPDATE cakephpdb.tasks SET user_id = 3, name = 'Nastya', email = 'nastya.nas@makklays.com', description = 'vivo', address = 'España', cp = 'no se ¿por qué hay que este campo?', created = '2021-05-09 10:40:26', modified = '2021-05-09 10:40:26' WHERE id = 6;
+UPDATE cakephpdb.tasks SET user_id = 3, name = 'Alexander2', email = 'admin@admin.com', description = 'come!!!', address = 'no se', cp = 'pagina web', created = '2021-05-09 15:47:34', modified = '2021-05-09 15:53:49' WHERE id = 7;
+UPDATE cakephpdb.tasks SET user_id = 3, name = '11111', email = 'alexxxander.kuziv@makklays.com', description = 'La tarea de casa', address = '', cp = '', created = '2021-05-09 20:53:20', modified = '2021-05-09 20:53:20' WHERE id = 14;
+UPDATE cakephpdb.tasks SET user_id = 1, name = 'Alejandro', email = 'alexxxxxander.kuziv@makklays.com', description = 'asdfsdf sf sdfsdf', address = 'sd fsd sd f', cp = 'sdf sd f', created = '2021-05-10 02:35:18', modified = '2021-05-10 02:35:18' WHERE id = 15;
+UPDATE cakephpdb.tasks SET user_id = 1, name = 'Alejandro', email = 'alejandro.kuziv@makklays.com', description = 'Programmar sitio web :-)', address = 'España', cp = 'no se ¿por qué hay que este campo?', created = '2021-05-10 02:36:24', modified = '2021-05-10 02:36:24' WHERE id = 16;
+
+UPDATE cakephpdb.users SET name = 'Alexander', password = '$2y$10$4t0/PJF7coYuyFvhiJUgduFi44WOYzgq1b0pD0H3Yk8vj6GB30zb6', created = '2021-05-08 21:20:23', modified = '2021-05-08 21:20:25', email = 'alexander.kuziv@makklays.com' WHERE id = 1;
+UPDATE cakephpdb.users SET name = 'Alexander AAA', password = '$2y$10$4t0/PJF7coYuyFvhiJUgduFi44WOYzgq1b0pD0H3Yk8vj6GB30zb6', created = '2021-05-09 12:39:56', modified = '2021-05-09 12:39:59', email = 'alejandro.kuziv@makklays.com' WHERE id = 3;
+UPDATE cakephpdb.users SET name = null, password = '$2y$10$CuSwbeHgMt4RvXISxzQHLOH9aj7K0T12qm2f60ghdXZZOutcEeJpy', created = '2021-05-10 01:30:05', modified = '2021-05-10 01:30:05', email = 'alexander2.kuziv@makklays.com' WHERE id = 4;

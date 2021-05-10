@@ -45,7 +45,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             <a target="_blank" rel="noopener" href="https://api.cakephp.org/">API</a-->
             <?php if(!empty($_SESSION['user']) && !empty($_SESSION['user']['name'])): ?>
                 <span><?=$_SESSION['user']['name']?></span>
-                <a href="/logout">Logout</a>
+                <?= $this->Html->link('Logout', ['controller' => 'users', 'action' => 'logout']) ?>
             <?php endif; ?>
         </div>
     </nav>

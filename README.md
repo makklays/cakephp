@@ -51,3 +51,32 @@ Other environment agnostic settings can be changed in `config/app.php`.
 The app skeleton uses [Milligram](https://milligram.io/) (v1.3) minimalist CSS
 framework by default. You can, however, replace it with any other library or
 custom styles.
+
+## Sobre tarea de prueba (screens)
+
+1. Login 
+
+<img scr="login.png" style="width:600px;" />
+
+2. All tasks
+
+<img scr="login.png" style="width:600px;" />
+
+3. Add task
+
+<img scr="login.png" style="width:600px;" />
+
+4. View task
+
+<img scr="login.png" style="width:600px;" />
+
+5. Edit task
+
+<img scr="login.png" style="width:600px;" />
+
+6. Delete task
+
+<img scr="login.png" style="width:600px;" />
+
+
+

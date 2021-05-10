@@ -56,11 +56,11 @@ custom styles.
 
 1. Login
 
-<img scr="webroot/img/cake_login.png" style="width:600px;" />
+<img scr="/webroot/img/cake_login.png" style="width:600px;" />
 
 2. All tasks
 
-<img scr="webroot/img/cake_all.png" style="width:600px;" />
+<img scr="/webroot/img/cake_all.png" style="width:600px;" />
 
 3. Add task
 

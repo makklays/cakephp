@@ -40,7 +40,7 @@ class TasksController extends AppController
     public function add() {
         $task = $this->Tasks->newEmptyEntity();
 
-        if ($this->request->is('post') ) {
+        if ($this->request->is('post') && !$task->getErrors()) {
             $task = $this->Tasks->patchEntity($task, $this->request->getData());
             //$task->user_id = 1;
 
@@ -77,19 +77,23 @@ class TasksController extends AppController
             'contain' => [],
         ]);
 
+        //pr($this->request->getData());
+        pr(!$task->getErrors());
+
         // check owner
-        if (!empty($this->user['id']) && !empty($task->user_id) && $this->user['id'] != $task->user_id) {
+        /*if (!empty($this->user['id']) && !empty($task->user_id) && $this->user['id'] != $task->user_id) {
             return $this->redirect(['action' => 'index']);
-        }
+        }*/
 
-        if ($this->request->is(['patch', 'post', 'put']) && $task->getErrors()) {
-
-            $task = $this->Tasks->patchEntity($task, $this->request->getData());
-            if ($this->Tasks->save($task)) {
-                $this->Flash->success('Your Task has been saved :-)');
-                return $this->redirect(['action' => 'index']);
+        if ($this->request->is(['patch', 'post', 'put']) && !$task->getErrors()) {
+            echo 'qqqqqqq';
+            if (!$task->getErrors()) {
+                $task = $this->Tasks->patchEntity($task, $this->request->getData());
+                if ($this->Tasks->save($task)) {
+                    $this->Flash->success('Your Task has been saved :-)');
+                    return $this->redirect(['action' => 'index']);
+                }
             }
-
             // No puede guardar
             $this->Flash->error('Unable to save Task :-(');
         }
